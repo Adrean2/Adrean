@@ -15,6 +15,7 @@ while len(listeCSV) <= 20:
     row = (quantité,unité)
     listeCSV.append(row)
     writer.writerow(listeCSV[-1])
+    
 # Création conversion de la durée
 def conversion(durée,unité):
     h = 0
