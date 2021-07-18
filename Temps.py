@@ -5,7 +5,7 @@ import random
 
 def create_csv():
     # Création fichier CSV
-    with open('D:\Dev\$ COURS OPEN CLASSROOMS\ProjetTemps\CSV.csv','w',encoding='UTF8',newline='') as csvfile:
+    with open('D:\Dev\_OpenClassRooms\ProjetTemps\CSV.csv','w',encoding='UTF8',newline='') as csvfile:
         writer = csv.writer(csvfile)
         # Ajout de données dans le fichier CSV
         listeCSV = []
@@ -20,7 +20,7 @@ def create_csv():
             listeCSV.append(row)
             writer.writerow(listeCSV[-1])
 # Création fichier CSV
-csvfile = open('D:\Dev\$ COURS OPEN CLASSROOMS\ProjetTemps\CSV.csv','w',encoding='UTF8',newline='')
+csvfile = open('D:\Dev\_OpenClassRooms\ProjetTemps\CSV.csv','w',encoding='UTF8',newline='')
 writer = csv.writer(csvfile)
 
 # Ajout de données dans le fichier CSV
@@ -62,7 +62,7 @@ def conversion(durée,unité):
 
 if __name__ == '__main__':
     create_csv()
-    with open('D:\Dev\$ COURS OPEN CLASSROOMS\ProjetTemps\CSV.csv','r',encoding='UTF8') as csv_reader:
+    with open('D:\Dev\_OpenClassRooms\ProjetTemps\CSV.csv','r',encoding='UTF8') as csv_reader:
         reader  = csv.reader(csv_reader,delimiter=",")
         for line in reader:
             durée = float(line[0])
